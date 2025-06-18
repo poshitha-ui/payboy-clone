@@ -1,0 +1,148 @@
+{
+  "header": {
+    "logo": {
+      "src": "https://d3j1xhpuvvxit1.cloudfront.net/assets/home/logo-f5aedb7a1fd271add77041a281c03b097ab0849ad596cf5d6dd33b303ee1cf22.svg",
+      "alt": "logo",
+      "width": "150px"
+    },
+    "navigation": [
+      {
+        "title": "Solutions",
+        "dropdown": true,
+        "sections": [
+          {
+            "title": "Celebrating our fellow entrepreneurs",
+            "description": "With our roots as a small start up, we understand the little intricacies and problems fellow SMEs face.",
+            "link": {
+              "text": "Learn more",
+              "class": "pb-learn-more"
+            }
+          },
+          {
+            "title": "Features",
+            "items": [
+              {
+                "title": "Payroll processing",
+                "icon": "https://payboy.sg/wp-content/uploads/2024/04/Payroll-module-icon.png",
+                "color": "#0048ff",
+                "description": "Automate payroll and payslips with just a click."
+              },
+              {
+                "title": "Leave management",
+                "icon": "https://payboy.sg/wp-content/uploads/2024/04/Leaves-Module-icon.png",
+                "color": "#ffaa29",
+                "description": "Apply for leaves digitally, check leave balance and approve leaves."
+              },
+              {
+                "title": "Claims Management",
+                "icon": "https://payboy.sg/wp-content/uploads/2024/04/Claims-icon.png",
+                "color": "#0fc6ae",
+                "description": "Set claim policies for different roles and approve them with ease."
+              },
+              {
+                "title": "Time & Attendance Tracker",
+                "icon": "https://payboy.sg/wp-content/uploads/2024/04/Attendance-icon.png",
+                "color": "#643a96",
+                "description": "Check in and out from our mobile app from anywhere."
+              },
+              {
+                "title": "Shift Scheduling",
+                "icon": "https://payboy.sg/wp-content/uploads/2024/04/Schedule.png",
+                "color": "#ee3435",
+                "description": "Drag and drop shifts to allocate staff based on availability."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Resources",
+        "dropdown": true,
+        "sections": [
+          {
+            "title": "Celebrating our fellow entrepreneurs",
+            "description": "With our roots as a small start up, we understand the little intricacies and problems fellow SMEs face.",
+            "link": {
+              "text": "Learn more",
+              "class": "pb-learn-more"
+            }
+          },
+          {
+            "title": "Resources",
+            "items": [
+              {
+                "title": "Calculators",
+                "icon": "https://payboy.sg/wp-content/uploads/2024/04/Calculator-2.png",
+                "color": "#0fc6ae",
+                "description": "Simplify HR calculations with our user-friendly free calculators."
+              },
+              {
+                "title": "Customer Stories",
+                "icon": "https://payboy.sg/wp-content/uploads/2024/04/Customer-Stories-1.png",
+                "color": "#643a96",
+                "description": "Hear our client's experiences and insights after using Payboy."
+              },
+              {
+                "title": "Blog",
+                "icon": "https://payboy.sg/wp-content/uploads/2024/04/Blog-icon-1.png",
+                "color": "#ee3435",
+                "description": "Explore the latest HR trends, industry insights and practical tips."
+              }
+            ]
+          },
+          {
+            "title": "EBOOKS",
+            "items": [
+              {
+                "title": "Top 9 HR Trends",
+                "icon": "https://payboy.sg/wp-content/uploads/2024/04/Top-9-HR-trend-1.png",
+                "color": "#0fc6ae",
+                "description": "Stay ahead of market changes and thrive in the AI-enabled workplace."
+              },
+              {
+                "title": "45 ChatGPT Prompts for HR",
+                "icon": "https://payboy.sg/wp-content/uploads/2024/04/Chat-GPT-prompt-icon.png",
+                "color": "#643a96",
+                "description": "Harness the full power of ChatGPT for certain HR-related work."
+              },
+              {
+                "title": "The Payroll Handbook",
+                "icon": "https://payboy.sg/wp-content/uploads/2024/04/Payroll-Handbook-1.png",
+                "color": "#ee3435",
+                "description": "Offer strategies and best practices to optimise your HR processes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Industries",
+        "dropdown": true
+      },
+      {
+        "title": "Pricing",
+        "dropdown": true
+      },
+      {
+        "title": "Contact",
+        "dropdown": false
+      }
+    ],
+    "actions": [
+      {
+        "text": "Book a Demo",
+        "type": "button",
+        "class": "pb-hdr-col-layout mr-4"
+      },
+      {
+        "text": "Log In",
+        "type": "link"
+      },
+      {
+        "text": "Sign Up",
+        "type": "link",
+        "class": "cta-free"
+      }
+    ]
+  }
+}

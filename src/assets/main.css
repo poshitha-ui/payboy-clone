@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* To remove the "Toggle Vue DevTools" icon from bottom of application: */
+#__vue-devtools-container__ {
+    display: none !important;
+}
+* {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+/* variables */
+:root {
+    /* --pb-fontlabel: "Shantell Sans", cursive; */
+    --primary-color: #0048ff;
+    --secondary-color: #090c1d;
+    --text-color: #808080;
+    --bg-secondary: #262626;
+}
+
+/* Common styles */
+@layer components {
+    .wrapper {
+        @apply container mx-auto px-8;
+    }
+    .space-between-sections{
+        @apply mt-[80px] md:mt-[120px]
+    }
+    .pb-box-shadow{
+        @apply shadow-pbShadow
+    }
+    .pb-subheader-section{
+         @apply max-w-3xl mx-auto mb-6 text-center
+    }
+    .pb-heading{
+        @apply text-4xl font-bold pb-8 md:text-6xl md:leading-[4rem]
+    }
+    .pb-heading-label{
+        @apply text-[--primary-color] text-2xl font-normal mb-2 font-shantell
+    }
+    .pb-subheading{
+         @apply text-3xl md:text-4xl font-bold pb-4
+    }
+    .pb-subtitle{
+         @apply text-3xl font-bold pb-4
+    }
+    .pb-text{
+        @apply text-base text-[--secondary-color] pb-3
+    }
+
+    /****** Buttons ******/
+    .btn { @apply rounded-xl px-4 py-3 border bg-slate-50 }
+    .btn-primary { @apply bg-[--primary-color] border-[--primary-color] text-white }
+    .btn-primary:hover { @apply bg-blue-800 border-blue-800 }
+    .btn-secondary { @apply bg-[#f1f1f9] border-[#f1f1f9] text-black }
+    .btn-secondary:hover { @apply bg-blue-100 border-blue-100 }
+    /***** pb-cards *****/
+    .pb-card{ @apply bg-white shadow-pbShadow p-4 border border-[#ceceea] rounded-lg }
+    .pb-card-title{ @apply text-xl font-extrabold }
+}
+
+
+.secondary-color {
+    background-color: #262626;
+}
+
+.sectordary-text {
+    color: 808080;
+}
+
+

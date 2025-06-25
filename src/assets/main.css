@@ -42,7 +42,7 @@
          @apply text-3xl md:text-4xl font-bold pb-4
     }
     .pb-subtitle{
-         @apply text-3xl font-bold pb-4
+         @apply text-[28px] font-bold pb-4
     }
     .pb-text{
         @apply text-base text-[--secondary-color] pb-3
@@ -69,3 +69,6 @@
 }
 
 
+.pb-hdr-col-layout{
+        @apply  px-4 py-3  bg-white rounded-xl border border-[#ceceea] shadow-pbShadow
+    }

@@ -1,8 +1,6 @@
 <script setup>
-import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
-import HomePage from './pages/HomePage.vue';
-import headerCopy from './components/header-copy.vue';
+import Navbar from './components/Navbar.vue';
 </script>
 
 <template >
@@ -10,12 +8,12 @@ import headerCopy from './components/header-copy.vue';
 
    <div class="min-h-screen flex flex-col">
     <!-- Your header/navbar (optional) -->
-    <Header></Header>
+    <Navbar></Navbar>
   
 
     <!-- Main content (flex-grow pushes footer down) -->
     <main class="flex-grow">
-      <HomePage />
+       <router-view />
     </main>
 
     <!-- Footer (always at bottom) -->

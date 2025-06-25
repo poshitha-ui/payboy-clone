@@ -31,12 +31,12 @@ import { MinusIcon, PlusIcon } from '@heroicons/vue/24/outline'
     ]
     const openFaqId = ref(null);
     const toggleFaq = (id) =>{
-        debugger;
+        
         if(openFaqId.value !== id){
-            debugger;
+            
             openFaqId.value = id;
         }else{
-            debugger
+            
             openFaqId.value = null;
         }
     }

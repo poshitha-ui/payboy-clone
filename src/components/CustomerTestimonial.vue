@@ -4,7 +4,11 @@
     <div class="relative md:min-h-[400px] min-h-[200px] overflow-hidden">
       <!-- Slides container -->
       <div class="flex h-full transition-transform duration-700 ease-in-out"
-           :style="translateStyle">
+           :style="translateStyle"
+            @touchstart="handleTouchStart"
+            @touchmove="handleTouchMove"
+            @touchend="handleTouchEnd"     
+      >
         <!-- Each slide -->
         <div v-for="(slide, index) in slides" 
              :key="index"
@@ -96,6 +100,30 @@ onBeforeUnmount(() => {
   window.removeEventListener('resize', updateSlidesPerView);
   stopAutoPlay();
 });
+
+const startX = ref(0);
+const endX = ref(0);
+
+const handleTouchStart = (e) => {
+  startX.value = e.touches[0].clientX;
+};
+
+const handleTouchMove = (e) => {
+  endX.value = e.touches[0].clientX;
+};
+
+const handleTouchEnd = () => {
+  const diff = startX.value - endX.value;
+
+  if (Math.abs(diff) > 50) { // Minimum swipe distance
+    if (diff > 0) {
+      nextSlide(); // Swipe left
+    } else {
+      prevSlide(); // Swipe right
+    }
+  }
+};
+
 </script>
 
 <style scoped>

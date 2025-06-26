@@ -10,10 +10,14 @@
                 <h3 class="pb-subheading">We thought you might be interested in..</h3>
                
         </header>
-        <div class="md:flex gap-12">
-            <div class="md:basis-[30%]">
+        <div class="md:flex gap-12 flex-col lg:flex-row">
+            
+            <div class="lg:basis-[70%] lg:order-2">
+                <carsouel />
+            </div>
+            <div class="mt-12 lg:basis-[30%] lg:order-1 lg:mt-0 ">
                 <div class="blog-itmes">
-                    <div class="md:flex gap-6">
+                    <div class="flex gap-6">
                         <div class="basis-[33%]">
                             <img class="rounded-xl blog-item-img" src="https://payboy.sg/wp-content/uploads/2024/11/Blog-How-to-implement-parent-care-leave-in-Singapore_.png" />
                         </div>
@@ -27,7 +31,7 @@
                     </div>
                 </div>
                 <div class="blog-itmes">
-                    <div class="md:flex gap-6">
+                    <div class="flex gap-6">
                         <div class="basis-[33%]">
                             <img class="rounded-xl blog-item-img" src="https://payboy.sg/wp-content/uploads/2024/11/Blog-Employee-Assistance-Program-EAP-guide-for-employers-in-Singapore.png" />
                         </div>
@@ -41,7 +45,7 @@
                     </div>
                 </div>
                 <div class="blog-itmes">
-                    <div class="md:flex gap-6">
+                    <div class="flex gap-6">
                         <div class="basis-[33%]">
                             <img class="rounded-xl blog-item-img" src="https://payboy.sg/wp-content/uploads/2024/11/Blog-How-to-write-constructive-employee-evaluation-comments.png" />
                         </div>
@@ -54,9 +58,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="md:basis-[70%]">
-                <carsouel />
             </div>
         </div>
         </div>

@@ -2,8 +2,8 @@
     <div class="space-between-sections">
         <div class="wrapper">
            <header class="pb-subheader-section">
-                    <span class="pb-heading-label"> How We Build </span>
-                    <p class="pb-subheading"> We’re Recognized Globally </p>
+                    <span class="pb-heading-label"> Seal of trust </span>
+                    <p class="pb-subheading"> We’re recognized globally </p>
             </header>
             <div>
                 <ul class="grid grid-cols-2 md:flex md:gap-3 md:justify-between rec-img-list gap-4">

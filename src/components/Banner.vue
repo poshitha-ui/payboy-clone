@@ -15,7 +15,7 @@
                     <source :src="videoSource" type="video/mp4">
                 </video>  
 
-                <h2 class="text-xl font-medium">{{ videoHeaderText }}</h2>
+                <h2 class="text-[17px] md:text-xl font-medium">{{ videoHeaderText }}</h2>
                 <a :href="videoButtonLink" class="btn btn-video">{{ videoButtonText }} <FontAwesomeIcon class="text-xs" :icon="['fas', 'circle-play']" /></a>
             </div>
 
@@ -147,5 +147,14 @@ const props = defineProps({
         font-size: 15px;
         color: #0047ff;
         border-color: transparent;
+    }
+    @media screen and (max-width: 576px) {
+        .poster {
+            display: none;
+        }
+        .btn-video{
+            font-size: 14px;
+            font-weight: 900;
+        }
     }
 </style>

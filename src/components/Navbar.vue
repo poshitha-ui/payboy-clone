@@ -23,6 +23,10 @@
     const toggleMobileDropdown = (dropdown) => {
         activeMobileDropdown.value = activeMobileDropdown.value === dropdown ? null : dropdown;
     };
+    const handleMobileLinkClick = () => {
+    isMobileMenuOpen.value = false;
+    activeMobileDropdown.value = null;
+};
 </script>
 <template>
     <div v-if="activeDropdown" class="overlay" @click="closeDropdown"></div>
@@ -310,35 +314,35 @@
                             <div v-show="activeMobileDropdown === 'solutions'" class="py-2 space-y-4">
                                 <div class="grid grid-cols-1 gap-4">
                                 <!-- Mobile dropdown items -->
-                                    <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                    <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick" class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/04/Payroll-module-icon.png"/>
                                         <div>
                                         <p class="font-semibold">Payroll processing</p>
                                         <p class="text-xs">Automate payroll and payslips with just a click.</p>
                                         </div>
                                     </RouterLink>
-                                    <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                    <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/04/Leaves-Module-icon.png"/>
                                         <div>
                                         <p class="font-semibold">Leave management</p>
                                         <p class="text-xs">Apply for leaves digitally, check leave balance and approve leaves.</p>
                                         </div>
                                     </RouterLink>
-                                    <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                    <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/04/Claims-icon.png"/>
                                         <div>
                                         <p class="font-semibold">Claims Management</p>
                                         <p class="text-xs">Set claim policies for different roles and approve them with ease.</p>
                                         </div>
                                     </RouterLink>
-                                    <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                    <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/04/Attendance-icon.png"/>
                                         <div>
                                         <p class="font-semibold">Time & Attendance Tracker</p>
                                         <p class="text-xs">Check in and out from our mobile app from anywhere.</p>
                                         </div>
                                     </RouterLink>
-                                    <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                    <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/04/Schedule.png"/>
                                         <div>
                                         <p class="font-semibold">Shift Scheduling</p>
@@ -357,42 +361,42 @@
                             <div v-show="activeMobileDropdown === 'resources'" class="py-2 space-y-4">
                                 <div class="grid grid-cols-1 gap-4">
                                 <!-- Mobile dropdown items -->
-                                   <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                   <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/04/Calculator-2.png"/>
                                         <div>
                                         <p class="font-semibold">Calculators</p>
                                         <p class="text-xs">Simplify HR calculations with our user-friendly free calculators.</p>
                                         </div>
                                     </RouterLink>
-                                    <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                    <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/04/Customer-Stories-1.png"/>
                                         <div>
                                         <p class="font-semibold">Customer Stories</p>
                                         <p class="text-xs">Hear our client's experiences and insights after using Payboy.</p>
                                         </div>
                                     </RouterLink>
-                                    <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                    <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/04/Blog-icon-1.png"/>
                                         <div>
                                         <p class="font-semibold">Blog</p>
                                         <p class="text-xs">Explore the latest HR trends, industry insights and practical tips.</p>
                                         </div>
                                     </RouterLink>
-                                    <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                    <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/04/Top-9-HR-trend-1.png"/>
                                         <div>
                                         <p class="font-semibold">Top 9 HR Trends</p>
                                         <p class="text-xs">Stay ahead of market changes and thrive in the AI-enabled workplace.</p>
                                         </div>
                                     </RouterLink>
-                                    <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                    <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/04/Chat-GPT-prompt-icon.png"/>
                                         <div>
                                         <p class="font-semibold">45 ChatGPT Prompts for HR</p>
                                         <p class="text-xs">Harness the full power of ChatGPT for certain HR-related work.</p>
                                         </div>
                                     </RouterLink>
-                                    <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                    <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/04/Payroll-Handbook-1.png"/>
                                         <div>
                                         <p class="font-semibold">The Payroll Handbook</p>
@@ -410,28 +414,28 @@
                             <div v-show="activeMobileDropdown === 'industries'" class="py-2 space-y-4">
                                 <div class="grid grid-cols-1 gap-4">
                                 <!-- Mobile dropdown items -->
-                                   <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                   <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/04/Food-industry.png"/>
                                         <div>
                                         <p class="font-semibold">Food & Beverage</p>
                                         <p class="text-xs">Streamline human operations, cut human costs, and ensure industry compliance.</p>
                                         </div>
                                     </RouterLink>
-                                    <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                    <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/04/Accounting-and-payroll.png"/>
                                         <div>
                                         <p class="font-semibold">Accounting and Payroll Services</p>
                                         <p class="text-xs">Apply for leaves digitally, check leave balance and approve leaves.</p>
                                         </div>
                                     </RouterLink>
-                                    <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                    <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/04/Recruitment.png"/>
                                         <div>
                                         <p class="font-semibold">Recruitment</p>
                                         <p class="text-xs">Manage all your client's recruiting needs in one place.</p>
                                         </div>
                                     </RouterLink>
-                                    <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                    <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/04/NCSS-NGO.png"/>
                                         <div>
                                         <p class="font-semibold">NCSS NGO</p>
@@ -448,35 +452,35 @@
                             </div>
                              <div v-show="activeMobileDropdown === 'pricing'" class="py-2 space-y-4">
                                 <div class="grid grid-cols-1 gap-4">
-                                    <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                    <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/04/PAY-Per-use-1.png"/>
                                         <div>
                                         <p class="font-semibold">Pay Per Use</p>
                                         <p class="text-xs">A monthly subscription plan that charges based on your service usage.</p>
                                         </div>
                                     </RouterLink>
-                                    <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                    <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/04/Upgrade-promotion-1.png"/>
                                         <div>
                                         <p class="font-semibold">Upgrade Promotion</p>
                                         <p class="text-xs">Upgrade to Payboy and enjoy premium features from $3 only.</p>
                                         </div>
                                     </RouterLink>
-                                    <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                    <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/05/Group-6616.png"/>
                                         <div>
                                         <p class="font-semibold">PSG Grant</p>
                                         <p class="text-xs">Get 50% off Singapore’s most reliable and user-friendly payroll software.</p>
                                         </div>
                                     </RouterLink>
-                                    <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                    <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/05/Group-6615.png"/>
                                         <div>
                                         <p class="font-semibold">Career Conversion Programme</p>
                                         <p class="text-xs">Reskill your workforce with up to 90% salary support.</p>
                                         </div>
                                     </RouterLink>
-                                    <RouterLink  to="/leavemanagement"  class="flex items-start gap-3 w-full pb-card">
+                                    <RouterLink  to="/leavemanagement" @click="handleMobileLinkClick"  class="flex items-start gap-3 w-full pb-card">
                                         <img class="w-10" src="https://payboy.sg/wp-content/uploads/2024/05/Group-6612.png"/>
                                         <div>
                                         <p class="font-semibold">Payboy Startup Package</p>
@@ -487,7 +491,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="flex justify-between items-center py-2 border-b">
+                            <div class="flex justify-between items-center py-2 border-b" @click="handleMobileLinkClick">
                                 <span class="text-md font-medium">Contact Us</span>
                             </div>
                         </li>

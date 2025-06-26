@@ -81,5 +81,8 @@
         padding-bottom: 3rem;
         margin-top: -7rem;
     }
+    :deep(.pb-card){
+        padding: 30px;
+    }
     
 </style>
